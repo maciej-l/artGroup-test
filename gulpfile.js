@@ -22,14 +22,14 @@ gulp.task('browser-sync', function(){
 gulp.task('sass', function(){
 	return gulp.src("sass/**/*.scss")
         .pipe(sourceMaps.init())
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sass({
          	errLogToConsole: true,
-         	outputStyle: 'condensed', 
+         	outputStyle: 'compressed', 
          	sourceComments: false, 
         }).on('error', sass.logError))
        	.pipe(sourceMaps.write('./'))
-        .pipe(gulp.dest("./css/"))
+        .pipe(gulp.dest("assets/css/"))
         .pipe(browserSync.stream());
 });
 

@@ -1,0 +1,14 @@
+// Variables
+@import 'variables/_vars.scss';
+
+// Mixins
+@import 'mixins/_rwd';
+
+// Normalize CSS
+@import 'modules/_reset';
+
+// General styles
+@import 'partials/_general';
+
+//Content styles
+@import 'partials/_content';

@@ -1,0 +1,40 @@
+html {
+	font-family: $main-font-family;
+	font-size: $main-font-size;
+	font-weight: $main-font-weight;
+}
+a {
+	color: $text-color-white;
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+input {
+	width: 100%;
+	padding: 1rem 1rem;
+	border: 1px solid $gray-border;
+	border-radius: 5px;
+	font-size: 1.125rem;
+	margin: .5rem 0;
+}
+input[type="checkbox"] {
+	border: 1px solid $gray-border;
+	background-color: $white-bcg;
+	width: 10%;
+	padding: .25rem;
+	width: 25px;
+	height: 25px;
+	margin: .5rem .5rem .5rem 0; 
+}
+input[type="submit"] {
+	color: $text-color-white;
+	font-weight: 400;
+	border: none;
+	background: #ed1651; /* Old browsers */
+	background: -moz-linear-gradient(top, #ed1651 0%, #f05a69 50%, #ed1651 50%, #ed1651 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ed1651 0%,#f05a69 50%,#ed1651 50%,#ed1651 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ed1651 0%,#f05a69 50%,#ed1651 50%,#ed1651 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1651', endColorstr='#ed1651',GradientType=0 ); /* IE6-9 */
+}

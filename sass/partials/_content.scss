@@ -1,0 +1,40 @@
+%basic__container {
+	width: 100%;
+	padding: 1rem;
+}
+.container {
+	width: 100%;
+		@include for-tablet-portrait {
+			display: flex;
+			flex-direction: row;
+		}
+}
+.container__left {
+	@extend %basic__container;
+	background-color: $dark-blue-bcg;
+}
+.top__logo {
+	text-align: center;
+		img {
+			width: 50%;
+			height: auto;
+		}
+}
+.contact__block {
+	color: $text-color-white;
+	text-align: center;
+}
+.contact__block_heading {
+	font-weight: 300;
+}
+.contact__block_numbers-link {
+	font-size: 1.9rem;
+}
+.container__right {
+	@extend %basic__container;
+	background-color: $white-bcg;
+	color: $text-color-black;
+}
+.form__block-heading {
+	font-size: 1.798rem;
+}

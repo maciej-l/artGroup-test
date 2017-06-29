@@ -1,0 +1,6 @@
+$tablet-portrait: map-get($resolutions, tablet-portrait);
+@mixin for-tablet-portrait {
+	@media (min-width: $tablet-portrait)  {
+		@content;
+	}
+}
