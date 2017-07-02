@@ -1,6 +1,24 @@
+$phone: map-get($resolutions, phone);
 $tablet-portrait: map-get($resolutions, tablet-portrait);
+$tablet-landscape: map-get($resolutions, tablet-landscape);
+$sm-desktop: map-get($resolutions, sm-desktop);
+@mixin for-phone-landscape {
+	@media (max-width: $phone) and (orientation: landscape) {
+		@content;
+	}
+}
 @mixin for-tablet-portrait {
 	@media (min-width: $tablet-portrait)  {
+		@content;
+	}
+}
+@mixin for-tablet-landscape {
+	@media (min-width: $tablet-landscape) {
+		@content;
+	}
+}
+@mixin for-sm-desktop {
+	@media (min-width: $sm-desktop) {
 		@content;
 	}
 }

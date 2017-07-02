@@ -15,5 +15,8 @@ $red-border: #ed1651;
 
 // Resolutions
 $resolutions: (
-	tablet-portrait: 768px
+	phone: 767px,
+	tablet-portrait: 768px,
+	tablet-landscape: 900px,
+	sm-desktop: 1024px
 	);
