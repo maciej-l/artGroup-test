@@ -36,12 +36,17 @@ input[type="checkbox"] {
 	margin: .5rem .5rem .5rem 0; 
 }
 label {
-	font-size: .625rem;
+	font-size: .725rem;
+		@include for-phone-landscape {
+			width: 50%;
+			font-size: .825rem;
+		}
 		@include for-tablet-portrait {
-			width: 30%;
+			width: 45%;
+			font-size: .925rem;
 		}
 		@include for-tablet-landscape {
-			width: 70%;
+			width: 80%;
 		}
 }
 input[type="submit"] {

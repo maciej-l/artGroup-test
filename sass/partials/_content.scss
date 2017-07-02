@@ -1,7 +1,6 @@
 %basic__container {
 	width: 100%;
 	padding: 2rem 1rem;
-		//@include for-tablet
 }
 .flex {
 	display: flex;
@@ -31,6 +30,14 @@
 			padding-left: 4rem;
 			padding-right: 1rem;
 		}
+		@include for-sm-desktop {
+			padding-left: 6rem;
+			padding-right: 2rem;
+		}
+		@include for-desktop {
+			padding-left: 9.375rem;
+			padding-right: 3.625rem;
+		}
 }
 .top__logo {
 	margin-bottom: 2rem;
@@ -42,7 +49,7 @@
 			text-align: left;
 		}
 		img {
-			width: 85%;
+			width: 75%;
 			height: auto;
 				@include for-phone-landscape {
 					width: 41%;
@@ -51,7 +58,10 @@
 					width: 35%;
 				}
 				@include for-tablet-landscape {
-					width: 70%;
+					width: 75%;
+				}
+				@include for-desktop {
+					width: 61%;
 				}
 		}
 }
@@ -93,7 +103,15 @@
 			padding-left: 1rem;
 			padding-right: 4rem;
 		}
+		@include for-sm-desktop {
+			padding-left: 2rem;
+			padding-right: 6rem;
+		}
+		@include for-desktop {
+			padding-left: 3.125rem;
+			padding-right: 13.375rem;
+		}
 }
 .form__block-heading {
-	font-size: 1.798rem;
+	font-size: 1.531rem;
 }
