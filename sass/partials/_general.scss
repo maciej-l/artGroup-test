@@ -21,6 +21,9 @@ input {
 	border-radius: 5px;
 	font-size: 1.125rem;
 	margin: .5rem 0;
+	&:focus {
+		outline: none;
+	}
 		@include for-tablet-landscape {
 			margin: 1rem 0;
 			padding: 0.688rem 1rem;

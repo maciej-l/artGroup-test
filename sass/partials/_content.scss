@@ -2,6 +2,9 @@
 	width: 100%;
 	padding: 2rem 1rem;
 }
+.show {
+	display: block;
+}
 .flex {
 	display: flex;
 	flex-direction: row;
@@ -114,4 +117,16 @@
 }
 .form__block-heading {
 	font-size: 1.531rem;
+}
+.form__msg {
+	font-size: 0.6rem;
+	text-transform: uppercase;
+}
+.form__msg-alert {
+	display: none;
+	color: $text-color-alert;
+}
+.form__msg-ok {
+	display: none;
+	color: $text-color-ok;
 }

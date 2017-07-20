@@ -46,16 +46,20 @@
 			<h1 class="form__block-heading">
 				Umów się na spotkanie
 			</h1>
-			<form action="" method="">
+			<form action="" method="index.html">
 				<input type="text" name="name" id="name" placeholder="Imię" />
 				<input type="text" name="surname" id="surname" placeholder="Nazwisko" />
-				<input type="text" name="phone-no" id="phone-no" placeholder="Telefon" />
-				<input type="text" name="email" id="email" placeholder="E-mail" />
+				<input type="number" name="phone-no" id="phone-no" placeholder="Telefon" />
+				<input type="email" name="email" id="email" placeholder="E-mail"/>
 				<div class="flex flex__center">
 					<input type="checkbox" name="statement" id="statement"/>
 					<label for="statement">
 						Wyrażam zgodę na przetwarzanie moich danych osobowych. Zapoznaj się z regulaminem.
 				</label>
+				</div>
+				<div class="form__msg">
+					<h1 class="form__msg-alert">Uzupełnij prawidłowo pola formularza</h1>
+					<h1 class="form__msg-ok">Dziękujemy za poprawne wypełnienie formularza</h1>
 				</div>
 				<div class="flex flex__reverse">
 					<input type="submit" name="send" id="send" value="Wyślij">
@@ -64,6 +68,6 @@
 		</div>
 		</div>
 	</div>
-<script type="text/javascript" src=""></script>		
+<script type="text/javascript" src="./assets/js/app.js"></script>		
 </body>
 </html>
